@@ -1,0 +1,6 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=10,walltime=20:00:00
+#PBS -M helen.youshan@gmail.com
+cd /projects/leam/LEAM
+module load parallel
+time seq 50 59 | parallel python stocasticgreedy_randomwalk.py 
