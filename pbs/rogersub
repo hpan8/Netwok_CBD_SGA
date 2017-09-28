@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=10,walltime=20:00:00
+#PBS -M hpan8@illinois.edu
+
+module load anaconda
+python /home/hpan8/LEAM_Calibration/Data_Prepare/Data_Prepare.py -c 0
+
+
